@@ -1,0 +1,117 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Dynamic Annotations in a Visualization Stepper</title>
+  <meta name="author" content="Rohit Bhagwat">
+  <meta name="description" content="This page is developed as a submission for the final Project for course CS498 - Data Visualization at University of Illinois, Urbana Champaign.">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+  .circle {
+    fill: red;
+  }
+  .circle:hover {
+    fill: brown;
+  }
+  #vis-container-right {
+    position: relative;
+    top: 0px;
+  }
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 50 ;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+  </style>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+<body>
+  <div id="container">
+    <h1>9 Years of La Liga: 2009-2017</h1>
+    <h2 class="subtitle">The dominance of two legends of the game - Lionel Messi and Christiano Ronaldo</h2>
+    <form>
+    <input type="button" value="About the Visualization" onclick="window.location.href='About.html'" />
+    </form>
+
+    <div id="selector">
+      <a href="#" id="a" class="year-selector active">2009</a>
+      <a href="#" id="b" class="year-selector">2010</a>
+      <a href="#" id="c" class="year-selector">2011</a>
+      <a href="#" id="d" class="year-selector">2012</a>
+      <a href="#" id="e" class="year-selector">2013</a>
+      <a href="#" id="f" class="year-selector">2014</a>
+      <a href="#" id="g" class="year-selector">2015</a>
+      <a href="#" id="h" class="year-selector">2016</a>
+      <a href="#" id="i" class="year-selector">2017</a>
+      <a href="#" id="j" class="year-selector">All</a>
+
+    </div>
+
+    <div id="vis-container">
+      <div id="vis-container-right">
+        <div class="scatter" id="scatter-a" style="display:block;">
+        </div>
+        <div class="scatter" id="scatter-b">
+        </div>
+        <div class="scatter" id="scatter-c">
+        </div>
+        <div class="scatter" id="scatter-d">
+        </div>
+        <div class="scatter" id="scatter-e">
+        </div>
+        <div class="scatter" id="scatter-f">
+        </div>
+        <div class="scatter" id="scatter-g">
+        </div>
+        <div class="scatter" id="scatter-h">
+        </div>
+        <div class="scatter" id="scatter-i">
+        </div>
+        <div class="scatter" id="scatter-j">
+        </div>
+      </div>
+    </div>
+    <div id="vis-canvas"></div>
+  </div>
+<script src="script/year_selector.js"></script>
+<script src="script/scatterplot.js"></script>
+<script>
+
+  var margin = {top: 50, right: 50, bottom: 50, left: 50},
+  width = Math.min(1000, window.innerWidth - 10) - margin.left - margin.right,
+  height = Math.min(600, window.innerHeight - margin.top - margin.bottom - 20);
+
+  var scatterPlotOptions = {
+    width: width,
+    height: height };
+
+  var datasources = [
+  {file: "data/2009TopPlayers.csv", divname: "#scatter-a"},
+  {file: "data/2010TopPlayers.csv", divname: "#scatter-b"},
+  {file: "data/2011TopPlayers.csv", divname: "#scatter-c"},
+  {file: "data/2012TopPlayers.csv", divname: "#scatter-d"},
+  {file: "data/2013TopPlayers.csv", divname: "#scatter-e"},
+  {file: "data/2014TopPlayers.csv", divname: "#scatter-f"},
+  {file: "data/2015TopPlayers.csv", divname: "#scatter-g"},
+  {file: "data/2016TopPlayers.csv", divname: "#scatter-h"},
+  {file: "data/2017TopPlayers.csv", divname: "#scatter-i"},
+  {file: "data/TopPlayers.csv", divname: "#scatter-j"}
+  ];
+
+  for (var i=0; i < datasources.length; i++) {
+      displayScatterChart(datasources[i].divname,scatterPlotOptions, datasources[i].file);
+  };
+
+</script>
+
+</body>

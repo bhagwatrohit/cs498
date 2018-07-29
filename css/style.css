@@ -1,0 +1,68 @@
+/* Styling for the entire page*/
+body {
+  font-size: 1.2em;
+}
+
+h1 {
+  font-size: 2em;
+  //padding-left: 10px;
+  color: #666;
+}
+
+h2.subtitle {
+  font-size: 0.8em;
+  //padding-left: 10px;
+  color: #666;
+}
+
+a.year-selector {
+  padding: 5px;
+  background-color: #444;
+  color: #666;
+  text-decoration: none;
+}
+
+a.year-selector:hover, a.active {
+  color: #ddd;
+}
+
+#container{
+  margin: auto;
+  padding-top: 20px;
+  width: relative;
+}
+
+/* Here is our relatively positioned
+ * container div to hold the rest of the
+ * visualization */
+#vis-container {
+  position: relative;
+  width: relative;
+  height: 700px;
+  margin-top: 10px;
+}
+
+#selector {
+  z-index: 20;
+}
+
+/* This is where you would create the actual visualization.
+ * Right now, lets just change the background color. */
+#vis-canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.grid{
+  position: relative;
+  display: none;
+}
+
+.scatter{
+  position: relative;
+  display: none;
+}

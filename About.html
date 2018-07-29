@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <title>About the Visualization</title>
+   </head>
+   <body>
+     <form>
+     <input type="button" value="Return to Dashboard" onclick="window.location.href='index.html'" />
+     </form>
+      <div>This dashboard is created by Rohit Bhagwat as a part of the final project submission for the course: CS498 Data Visualization at University of Illinois, Urbana Champaign. </div>
+      <div><br/></div>
+      <div>In the past few weeks of the course we got to learn about the power of D3 visualizations. D3 is a powerful Javascript library which helps developers to associate HTML elements with data. I was very new to the world of Javascript and D3, so I enjoyed this course a lot. </div>
+      <div><br/></div>
+      <div>As a part of this project, I decided to visualize player performances in La-Liga (Spanish Football league) for the past 9 years. In those years we have witnessed two of the greatest soccer players to have played the game play every week in La Liga - Lionel Messi and Cristiano Ronaldo. I wanted to visualize their impact to the league through the numbers. </div>
+      <div><br/></div>
+      <div> I collected the data for the past 9 years from <a href="http://whoscored.com">http://whoscored.com</a>.</div>
+      <div>For the purposes of this dashboard, I’m only concentrating on the Goals Scored and Assists provided by the players (not particularly good parameters for a defensive or a midfield player, but we’ll stick to it for this visualization). </div>
+      <div>In order to concentrate on data visualization, I have pre-prepared the data and stored in CSV files. For each year we will be looking at the Top 20 players only.</div>
+      <div><br/></div>
+      <div>I’m providing answers to the criteria in the Rubric in the below table for simple reading. <br/></div>
+      <div><br/></div>
+
+      <table style="box-sizing: border-box; -webkit-font-smoothing: antialiased; border-spacing: 0px; caret-color: rgb(51, 51, 51); font-size: 14px; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; border-collapse: collapse; min-width: 100%;">
+         <colgroup>
+            <col style="width: 226px;"/>
+            <col style="width: 645px;"/>
+         </colgroup>
+         <tbody style="box-sizing: border-box; -webkit-font-smoothing: antialiased;">
+            <tr style="box-sizing: border-box; -webkit-font-smoothing: antialiased;">
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 226px; padding: 8px;">
+                  <div><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-weight: bold;">Criteria</span></div>
+               </td>
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 645px; padding: 8px;">
+                  <div><span style="box-sizing: border-box; -webkit-font-smoothing: antialiased; font-size: 14px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-weight: bold;">Description</span></div>
+               </td>
+            </tr>
+            <tr style="box-sizing: border-box; -webkit-font-smoothing: antialiased;">
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 226px; padding: 8px;">
+                  <div><span style="font-size: 14px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal;">Does the narrative visualization correctly follow the hybrid structure as stated by the essay? </span></div>
+               </td>
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 645px; padding: 8px;">
+                  <div><span style="font-size: 14px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal;">In this dashboard I am using the Interactive Slideshow hybrid structure. </span></div>
+                  <div><font color="#333333" face="Helvetica Neue, Helvetica, Arial, sans-serif">The reason for this is it enables us to browse through the player performances in a consistent manner across visualizations and particularly let us focus on Lionel Messi </font></div>
+               </td>
+            </tr>
+            <tr style="box-sizing: border-box; -webkit-font-smoothing: antialiased;">
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 226px; padding: 8px;">
+                  <div><span style="font-size: 14px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal;">Does the narrative visualization effectively utilize scenes? </span></div>
+               </td>
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 645px; padding: 8px;">
+                  <div><font color="#333333">I’m following a consistent scene throughout the interactive journey. The focus is on comparing the performances between two players across multiple years while maintaining the consistency in the view. I focused on a single chart (scatterplot) in a single scene. </font></div>
+               </td>
+            </tr>
+            <tr style="box-sizing: border-box; -webkit-font-smoothing: antialiased;">
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 226px; padding: 8px;">
+                  <div><span style="font-size: 14px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal;">Does the narrative visualization effectively utilize annotations? </span></div>
+               </td>
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 645px; padding: 8px;">
+                  <div><font color="#333333">The primary purpose of the visualization is to focus on the performance of these two players. I’m using annotations to annotate their performances through the years. </font></div>
+               </td>
+            </tr>
+            <tr style="box-sizing: border-box; -webkit-font-smoothing: antialiased;">
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 226px; padding: 8px;">
+                  <div><span style="font-size: 14px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal;">Does the narrative visualization effectively utilize parameters? </span></div>
+               </td>
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 645px; padding: 8px;">
+                  <div><font color="#333333" face="Helvetica Neue, Helvetica, Arial, sans-serif">There are two parameters - parameter to change the years and mouseover parameter which enables the user to hover and look into the details for each player. </font></div>
+               </td>
+            </tr>
+            <tr style="box-sizing: border-box; -webkit-font-smoothing: antialiased;">
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 226px; padding: 8px;">
+                  <div><span style="font-size: 14px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal;">Does the narrative visualization effectively utilize triggers? </span></div>
+               </td>
+               <td style="box-sizing: border-box; -webkit-font-smoothing: antialiased; text-align: left; border: 1px solid rgb(224, 224, 224); width: 645px; padding: 8px;">
+                  <div><span style="font-size: 14px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal;">The year buttons let the user change the years which server as triggers for the scene. </span></div>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div><br/></div>
+      <div>My goal for this visualization was to concentrate on the basics of what we learned over the course of past few weeks. I particularly enjoyed working with D3, I learned to create bar chart, scatter chart and realized the endless potential of D3.</div>
+      <div>I look forward to doing more things with D3. </div>
+      <div><br/></div>
+   </body>
+</html>
